@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Event Registration</h1>
+        <p>Register for your favorite college event!</p>
+
+        <form id="registrationForm">
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number"
+                   pattern="[0-9]{10}" required>
+
+            <label>Select Event</label>
+            <select id="event" required>
+                <option value="">Choose an event</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="Coding Contest">Coding Contest</option>
+                <option value="Tech Quiz">Tech Quiz</option>
+                <option value="Workshop">Workshop</option>
+            </select>
+
+            <button type="submit">Register Now</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
